@@ -1,5 +1,7 @@
  // Replace with your key// api.js
 const API_KEY = import.meta.env.VITE_DB_API_KEY;
+const BASE_URL = import.meta.env.VITE_DB_BASE_URL;
+
 
 export const getMovies = async () => {
   try {
@@ -11,7 +13,7 @@ export const getMovies = async () => {
   }
 };
 
-const BASE_URL = import.meta.env.VITE_DB_BASE_URL;
+
 /**
  * Fetch popular movies
  * OMDb doesn’t have a “popular” endpoint,
